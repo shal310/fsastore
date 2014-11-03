@@ -1,0 +1,1058 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="accordion.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript">
+          var animatedcollapse = {
+                toggle: function(div_id){
+                    /* jQuery implementation - fade type: blind, no options, and 500 ms delay */
+                    //$('#' + div_id).toggle('blind', { }, 500);
+
+                    /* Pure JavaScript implementation */
+                    var div = document.getElementById(div_id);
+
+                    /* Ternary operations - one liner */
+                    //div.style.display = (div.style.display == 'none') ? 'block' : 'none';
+
+                    if(div.style.display == 'none'){
+                        div.style.display = 'block';
+                    }
+                    else {
+                        div.style.display = 'none';
+                    }
+                }
+            };
+            window.animatedcollapse = animatedcollapse; //For this to work in IE
+        </script>
+
+    </head>
+
+    <body>
+
+
+        <h1 class="DottedUnderline">FSAstore.com Over 125 Partners</h1>
+        <br>
+        <div data-sigil="tpaPartnerLogos" id="tpaPartners">
+            <a target="_blank" href="http://www.adp.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/adp.PNG" alt="">
+            </a>
+            <a target="_blank" href="http://www.paychex.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/paychex.PNG" alt="">
+            </a>
+            <a target="_blank" href="http://www.flex125.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ameriflex.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.24hourflex.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/24hoursflex-logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.adminproadvantage.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/adminpro_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.bdsadmin.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/bds_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.benefitcoordinators.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/benefitcoordinators_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.businessplansinc.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/businessplansincorporated_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.pagroup.us/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/payproadmin-logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.benefitextras.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/benefitextrasinc_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.cpa125.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/cafeteriaplanadvisors_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="https://www.eflexgroup.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/eflexgroup_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://continuonservices.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/continuonservices_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.chard-snyder.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/chardsnyder_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="https://www.flexcorp.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/flexcorp_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.choicecarecard.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/choicecarecard_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.piercegroupbenefits.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/piercegroupbenefits_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://abybenefits.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/alt-bentley-yates.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.myconsumerplan.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/integratedbenefits_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.corphealthsys.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/corporatehealthsystemsinc_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.pacificbenefits.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/pacificbenefitsiflexinc_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.tri-starsystems.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/Tristarsystems_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.abs125.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/abs-advanced-benefits.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.activabenefits.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/activa.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.adminusa.us">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/admin-usa.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.advantageadmin.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/advantage-admin.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.amben.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/american-benefits.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.adminnw.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ani-admin-northwest.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.arcadiabenefits.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/arcadia-benefits.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.basiconline.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/basic.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.bene-care.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/bene-care-advocate.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.benefitalt.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/benefit-alternatives.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.benefitresources.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/benefit-resource.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.benstrat.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/benefit-strategies.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.awm.cc">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/bp-benefit-partners.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.brmsonline.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/brms.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.conceptsinbenefits.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/cbi-concept-benefits.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.choice-strategies.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/choice-strategies.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.consolidatedhealthplans.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/chp-consolidated-health.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.ccflex.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/compensations-consultants.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.corporatecoverage.net">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/corporate-coverage.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.dpath.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/datapath.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.ebsincorporated.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ebs-employee-benefit.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.ebcflex.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/employee-benefits-corp.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.flexadministrators.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/flex-admin-inc.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.flexbank.net">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/flexbank.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.flex-admin.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/flexible-benefit.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.goldleafpartners.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/goldleaf.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.hrconcepts.biz">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/hr-concepts.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.hrsimplified.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/hr-simplified.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.emangrove.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/mangrove.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.mai-ky.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/mcgregor-associates.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.med-pay.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/med-pay.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.flexneo.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/neo-admin.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.omniinsurance.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/omni-group.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.outsourceone.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/outSourceOne.PNG" alt="">
+            </a>
+            <a target="_blank" href="http://www.pcgbenefits.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/patrick.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.mypeak1.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/peak1-admin.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.polestarbenefits.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/polestar-benefits.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.saversadmin.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/savers-admin-services.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.sbsadmin.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/sbs.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.sbsc.info">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/secure-benefits.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.sentinelgroup.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/sentinel-benefits.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.unifiedgrp.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/unified.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.vantageflex.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/vantage-flex.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.verityiba.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/verity-iba.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.vitaflex.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/vita-companies.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.workablesolutions.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/workable-solutions.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.sieba.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/sieba.png" alt="">
+            </a>
+            <a target="_blank" href="http://www.jwterrill.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/jwTerrill.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.payroll-us.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/payrollSystems.gif" alt="">
+            </a>
+            <a target="_blank" href="http://www.vantagepointbenefit.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/vantagePointBenefitAdmin.png" alt="">
+            </a>
+            <a target="_blank" href="http://www.wasatchbenefit.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/wasatchEmployeeBenefitService.png" alt="">
+            </a>
+            <a target="_blank" href="http://www.timberridgebenefits.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/timberRidgeBenefits.png" alt="">
+            </a>
+            <a target="_blank" href="http://www.ebs-tpa.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/EBS Logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.govbenefit.biz/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/governmentBenefitService.png" alt="">
+            </a>
+            <a target="_blank" href="http://mybenefitspeople.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/benefitsConnection.png" alt="">
+            </a>
+            <a target="_blank" href="http://www.ourbenefitsolution.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ourBenefitSolution.png" alt="">
+            </a>
+            <a target="_blank" href="http://www.flexfacts.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/flex-facts_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.flexbene.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/flexBene.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.iaatpa.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/iaa-logo.png" alt="">
+            </a>
+            <a target="_blank" href="http://www.b-m-s.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/logo.png" alt="">
+            </a>
+            <a target="_blank" href="https://www.ntalifebsg.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/header_logo_full.png" alt="">
+            </a>
+            <a target="_blank" href="http://www.feingoldco.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/Capture.PNG" alt="">
+            </a>
+            <a target="_blank" href="http://www.flexsaveamerica.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/header4.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.sasiplans.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/sasiLogo.gif" alt="">
+            </a>
+            <a target="_blank" href="http://glynn.info/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/GGA_logo.png" alt="">
+            </a>
+            <a target="_blank" href="http://www.garnerconsulting.com/	">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/GARNERlogo.gif" alt="">
+            </a>
+            <a target="_blank" href="http://www.dgb-online.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/dgb.PNG" alt="">
+            </a>
+            <a target="_blank" href="http://ofgfinancial.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ofg.PNG" alt="">
+            </a>
+            <a target="_blank" href="http://www.resourceadmin.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/res.PNG" alt="">
+            </a>
+            <a target="_blank" href="http://www.payplansandbenefits.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/consulting-firm.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://surency.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/Surencyheader.gif" alt="">
+            </a>
+            <a target="_blank" href="http://www.taben.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/tg.PNG" alt="">
+            </a>
+            <a target="_blank" href="http://www.arcadiabenefits.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/logo-header-official.png" alt="">
+            </a>
+            <a target="_blank" href="http://benefitalternative.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/index_01.jpg" alt="">
+            </a>
+            <a target="_blank" href="https://www.med-pay.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/phpThumb_generated_thumbnail.png" alt="">
+            </a>
+
+            <a target="_blank" href="http://www.keybenefit.com/KBA/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/homeTitleBar.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.adminnw.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ani_d.gif" alt="">
+            </a>
+
+            <a target="_blank" href="http://www.thepreferredgroup.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/pg.PNG" alt="">
+            </a>
+            <a target="_blank" href="http://www.abadmin.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ab.PNG" alt="">
+            </a>
+            <a target="_blank" href="http://www.taxsaverplan.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/tax.PNG" alt="">
+            </a>
+            <a target="_blank" href="http://www.benefitresource.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/bri.PNG" alt="">
+            </a>
+            <a target="_blank" href="https://consolidatedhealthplan.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/chp_logo.png" alt="">
+            </a>
+            <a target="_blank" href="http://www.benefitadvantage.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ba.PNG" alt="">
+            </a>
+            <a target="_blank" href="http://www.125company.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/125.PNG" alt="">
+            </a>
+            <a target="_blank" href="http://www.kazdon.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/kz.PNG" alt="">
+            </a>
+            <a target="_blank" href="http://www.consociate.com/consociate/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/logo (1).png" alt="">
+            </a>
+            <a target="_blank" href="http://www.bpcinc.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/bpc_logo.gif" alt="">
+            </a>
+            <a target="_blank" href="http://www.higginbotham.net/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/h.PNG" alt="">
+            </a>
+            <a target="_blank" href="http://www.primepay.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/pp_logo_white_bg.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.vanfin.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/vantage-financial-group-inc-logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.ebpabenefits.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ebpa_logo.gif" alt="">
+            </a>
+            <a target="_blank" href="http://www.nexgenpayroll.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ng.PNG" alt="">
+            </a>
+            <a target="_blank" href="http://www.eaglesbenefits.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/masterheader2.jpg" alt="">
+            </a>
+            <a target="_blank" href="http://www.asiflex.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/logo (2).png" alt="">
+            </a>
+            <a target="_blank" href="http://www.dpath.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/dpath_logo.jpg" alt="">
+            </a>
+            <a target="_blank" href="https://www.healthequity.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/HEQ_Logo_1.png" alt="">
+            </a>
+
+            <a target="_blank" href="http://www.alegeus.com/#&amp;panel1-1">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/logo (3).png" alt="">
+            </a>
+            <a target="_blank" href="http://www.completepayrollsolutions.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/img_logo.gif" alt="">
+            </a>
+            <a target="_blank" href="http://www.125max.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/125MAX_logo.jpg" alt="">
+            </a>
+        </div>
+
+
+    <div id="PartnersFSAStoreMargins" class="aboutDiv fltLeft">
+        <h1 class="DottedUnderline">FSAstore.com Over 125 Partners</h1>
+        <br>
+        <ul data-sigil="tpaPartnerLogos" id="tpaPartners">
+            <li> <a target="_blank" href="http://www.adp.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/adp.PNG"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.paychex.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/paychex.PNG"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.flex125.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ameriflex.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.24hourflex.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/24hoursflex-logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.adminproadvantage.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/adminpro_logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.bdsadmin.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/bds_logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.benefitcoordinators.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/benefitcoordinators_logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.businessplansinc.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/businessplansincorporated_logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.pagroup.us/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/payproadmin-logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.benefitextras.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/benefitextrasinc_logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.cpa125.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/cafeteriaplanadvisors_logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="https://www.eflexgroup.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/eflexgroup_logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://continuonservices.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/continuonservices_logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.chard-snyder.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/chardsnyder_logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="https://www.flexcorp.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/flexcorp_logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.choicecarecard.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/choicecarecard_logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.piercegroupbenefits.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/piercegroupbenefits_logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://abybenefits.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/alt-bentley-yates.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.myconsumerplan.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/integratedbenefits_logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.corphealthsys.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/corporatehealthsystemsinc_logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.pacificbenefits.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/pacificbenefitsiflexinc_logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.tri-starsystems.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/Tristarsystems_logo.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.abs125.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/abs-advanced-benefits.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.activabenefits.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/activa.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.adminusa.us">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/admin-usa.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.advantageadmin.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/advantage-admin.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.amben.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/american-benefits.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.adminnw.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ani-admin-northwest.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.arcadiabenefits.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/arcadia-benefits.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.basiconline.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/basic.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.bene-care.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/bene-care-advocate.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.benefitalt.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/benefit-alternatives.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.benefitresources.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/benefit-resource.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.benstrat.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/benefit-strategies.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.awm.cc">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/bp-benefit-partners.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.brmsonline.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/brms.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.conceptsinbenefits.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/cbi-concept-benefits.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.choice-strategies.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/choice-strategies.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.consolidatedhealthplans.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/chp-consolidated-health.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.ccflex.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/compensations-consultants.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.corporatecoverage.net">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/corporate-coverage.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.dpath.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/datapath.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.ebsincorporated.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ebs-employee-benefit.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.ebcflex.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/employee-benefits-corp.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.flexadministrators.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/flex-admin-inc.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.flexbank.net">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/flexbank.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.flex-admin.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/flexible-benefit.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.goldleafpartners.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/goldleaf.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.hrconcepts.biz">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/hr-concepts.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.hrsimplified.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/hr-simplified.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.emangrove.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/mangrove.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.mai-ky.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/mcgregor-associates.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.med-pay.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/med-pay.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.flexneo.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/neo-admin.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.omniinsurance.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/omni-group.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.outsourceone.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/outSourceOne.PNG"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.pcgbenefits.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/patrick.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.mypeak1.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/peak1-admin.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.polestarbenefits.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/polestar-benefits.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.saversadmin.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/savers-admin-services.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.sbsadmin.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/sbs.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.sbsc.info">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/secure-benefits.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.sentinelgroup.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/sentinel-benefits.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.unifiedgrp.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/unified.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.vantageflex.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/vantage-flex.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.verityiba.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/verity-iba.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.vitaflex.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/vita-companies.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.workablesolutions.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/workable-solutions.jpg"    alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.sieba.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/sieba.png"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.jwterrill.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/jwTerrill.jpg"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.payroll-us.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/payrollSystems.gif"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.vantagepointbenefit.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/vantagePointBenefitAdmin.png"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.wasatchbenefit.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/wasatchEmployeeBenefitService.png"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.timberridgebenefits.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/timberRidgeBenefits.png"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.ebs-tpa.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/EBS Logo.jpg"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.govbenefit.biz/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/governmentBenefitService.png"  >
+            </a></li>
+            <li> <a target="_blank" href="http://mybenefitspeople.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/benefitsConnection.png"     alt=""  >
+            </a></li>
+            <li> <a target="_blank" href="http://www.ourbenefitsolution.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ourBenefitSolution.png"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.flexfacts.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/flex-facts_logo.jpg"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.flexbene.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/flexBene.jpg"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.iaatpa.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/iaa-logo.png"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.b-m-s.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/logo.png"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="https://www.ntalifebsg.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/header_logo_full.png"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.feingoldco.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/Capture.PNG"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.flexsaveamerica.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/header4.jpg"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.sasiplans.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/sasiLogo.gif"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://glynn.info/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/GGA_logo.png"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.garnerconsulting.com/	">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/GARNERlogo.gif"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.dgb-online.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/dgb.PNG"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://ofgfinancial.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ofg.PNG"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.resourceadmin.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/res.PNG"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.payplansandbenefits.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/consulting-firm.jpg"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://surency.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/Surencyheader.gif"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.taben.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/tg.PNG"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.arcadiabenefits.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/logo-header-official.png"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://benefitalternative.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/index_01.jpg"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="https://www.med-pay.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/phpThumb_generated_thumbnail.png"   alt="" >
+            </a></li>
+
+            <li> <a target="_blank" href="http://www.keybenefit.com/KBA/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/homeTitleBar.jpg"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.adminnw.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ani_d.gif"   alt="" >
+            </a></li>
+
+            <li> <a target="_blank" href="http://www.thepreferredgroup.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/pg.PNG"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.abadmin.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ab.PNG"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.taxsaverplan.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/tax.PNG"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.benefitresource.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/bri.PNG"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="https://consolidatedhealthplan.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/chp_logo.png"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.benefitadvantage.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ba.PNG"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.125company.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/125.PNG"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.kazdon.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/kz.PNG"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.consociate.com/consociate/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/logo (1).png"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.bpcinc.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/bpc_logo.gif"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.higginbotham.net/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/h.PNG"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.primepay.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/pp_logo_white_bg.jpg"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.vanfin.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/vantage-financial-group-inc-logo.jpg"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.ebpabenefits.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ebpa_logo.gif"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.nexgenpayroll.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/ng.PNG"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.eaglesbenefits.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/masterheader2.jpg"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.asiflex.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/logo (2).png"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.dpath.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/dpath_logo.jpg"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="https://www.healthequity.com">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/HEQ_Logo_1.png"   alt="" >
+            </a></li>
+
+            <li> <a target="_blank" href="http://www.alegeus.com/#&amp;panel1-1">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/logo (3).png"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.completepayrollsolutions.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/img_logo.gif"   alt="" >
+            </a></li>
+            <li> <a target="_blank" href="http://www.125max.com/">
+                <img src="https://c39942.ssl.cf2.rackcdn.com/tpa/logos/125MAX_logo.jpg"   alt="" >
+            </a></li>
+        </ul>
+    </div>
+
+
+
+    <div id="faq-holder">
+
+    <div style="clear: left; float: left; margin-left: 15px; width: 90%;">
+        <h1 class="pgtitle">Frequently Asked Questions</h1>
+
+        <ul style="list-style: none;">
+            <li><a href="javascript:animatedcollapse.toggle('ans1')" class="faq">What is FSAStore.com ?</a></li>
+            <div id="ans1" class="faqans">
+                <strong>Ans:</strong> FSAStore.com is the one stop source for all things FSA. For information about a flexible spending account <a href="/Services/Flexible-Spending-Learning-Center.aspx">click here</a>. We have the largest inventory of FSA eligible products and services on the web. In fact, we ONLY carry FSA eligible products! Our competitive pricing and quick turnaround coupled with a website you can trust makes us the source for Flexible Spending Account information and shopping. You can also use your FSA debit card to shop on our site. We accept almost every FSA debit card as well as all major credit cards. Please Note: Although we accept FSA Debit Cards, your FSA Administrator might require a receipt for your purchase to substantiate the claim. For more information on how to use FSAstore.com, please <a href="/Help/GettingStarted.aspx">click here</a>.
+            </div>
+
+            <li><a href="javascript:animatedcollapse.toggle('ans2')" class="faq">What does "FSA Eligible" mean?</a></li>
+            <div id="ans2" class="faqans">
+                <strong>Ans:</strong> FSA Eligible means that in most every case this product or service will be covered by your Flexible Spending Account plan. FSAStore.com is a member of SIGIS and has implemented IIAS standards that supplies the list of every product that is FSA eligible. The debit card you use on our site will process your transaction and instantaneously approve your FSA purchases.
+            </div>
+
+            <li><a href="javascript:animatedcollapse.toggle('ans3')" class="faq">Are all of your products FSA eligible?</a></li>
+            <div id="ans3" class="faqans">
+                <strong>Ans:</strong> Yes. However, there are certain Flexible Spending Accounts that do not cover each and every item, this is sometimes set up by employers which limits some of the products you can buy. Most people will know whether their employer has limited the purchases that qualify but other than those rare FSA accounts, everything is eligible under the IIAS list that is the standard for FSA eligible products.
+            </div>
+
+
+            <li><a href="javascript:animatedcollapse.toggle('ans4')" class="faq">Can I still shop if I don't have an FSA account?</a></li>
+            <div id="ans4" class="faqans">
+                <strong>Ans:</strong> Yes! You can shop and checkout, We accept all major credit cards and all FSA Debit Cards! </div>
+
+            <li><a href="javascript:animatedcollapse.toggle('ans5')" class="faq">Do you accept my FSA Debit Card?</a></li>
+            <div id="ans5" class="faqans">
+                <strong>Ans:</strong> Yes, we accept all FSA debit cards. If you do not have an FSA debit card you can print out a receipt and submit to your FSA administrator to get reimbursed as you would normally with all of your FSA purchases.
+            </div>
+
+            <li><a href="javascript:animatedcollapse.toggle('ans6')" class="faq">Do I have to submit receipts for my purchases at FSAStore.com?</a></li>
+            <div id="ans6" class="faqans">
+                <strong>Ans:</strong> If you do not have an FSA debit card you can print out a receipt and submit to your FSA administrator to get reimbursed as you would normally with all of your FSA purchases. You can print receipts after you make your order, or come back anytime to access your account.
+                <i style="color: #808080">Please Note: Although we accept FSA Debit Cards, your FSA Administrator might require a receipt for your purchase to substantiate the claim.</i>
+            </div>
+
+            <li><a href="javascript:animatedcollapse.toggle('ans7')" class="faq">Do you accept insurance?</a></li>
+            <div id="ans7" class="faqans">
+                <strong>Ans:</strong> Most OTC products are not covered by insurance so there is no need for insurance plans to process claims for your purchases. For those Home Health Care Products such as Wheelchairs and other products that might be covered by insurance we recommend that you consult your Insurance plan to see what might be covered by insurance first.
+            </div>
+
+            <li><a href="javascript:animatedcollapse.toggle('ans8')" class="faq">What is a Flexible Spending Account (FSA)?</a></li>
+            <div id="ans8" class="faqans">
+                <strong>Ans:</strong> A Flexible Spending Account (FSA) allows consumers to deduct pre-tax dollars from their paychecks and deposit those funds in employer-sponsored accounts to pay for medical expenses - including over-the-counter, prescription, and vision health essentials. Consumers then can shop using their debit cards for eligible expenses or submit expense receipts to healthcare administrators for reimbursement. For information about a flexible spending account click here to access our FAQ page about Flexible Spending Accounts.
+            </div>
+
+            <li><a href="javascript:animatedcollapse.toggle('ans9')" class="faq">How do I know which items are eligible for FSA reimbursement?</a></li>
+            <div id="ans9" class="faqans">
+                <strong>Ans:</strong> Since we only offer FSA Eligible Products we clearly mark over-the-counter (OTC) products with this icon:
+                Note: Although the IRS sets guidelines for FSA programs, individual employers have the final determination of which expenses are covered by their FSA programs. However, it is rare for employers to change on their own what is eligible. We are a member of SIGIS which sets the eligible product list. The FSA icon displayed on our site does not guarantee you will be reimbursed. Check with your employer for the specific guidelines of your program.
+            </div>
+
+            <li><a href="javascript:animatedcollapse.toggle('ans10')" class="faq">What is your privacy policy?</a></li>
+            <div id="ans10" class="faqans">
+                <strong>Ans:</strong> Please visit our Privacy policy by clicking <a href="http://privacy-policy.truste.com/click-to-verify/www.fsastore.com" title="Privacy Policy by TRUSTe" target="_blank">here</a>
+            </div>
+
+            <li><a href="javascript:animatedcollapse.toggle('ans11')" class="faq">Do you ship outside the U.S?</a></li>
+            <div id="ans11" class="faqans">
+                <strong>Ans:</strong> No, we currently only ship to physical addresses within the U.S.A. Flexible Spending Accounts are only offered in the United States.
+            </div>
+
+
+            <li><a href="javascript:animatedcollapse.toggle('ans12')" class="faq">Can I return my items?</a></li>
+            <div id="ans12" class="faqans">
+
+
+                If for any reason you are unsatisfied with a product purchased from FSAstore.com, you
+                may return it for a refund within 30 days of your purchase date. Because of the nature
+                of the products (over-the-counter drugs), regulations will not allow us to accept any
+                returns of products with packaging that has been opened or with seals that have been
+                tampered with. Products must be in the condition you received them and in the original
+                box and/or packaging. If you choose to return a product within these guidelines, we
+                will gladly accept it and process a full refund of the product. Returns must be approved
+                and authorized; we are unable to accept returned items without an authorized return
+                number.
+                <br><br>
+                If you are returning a product for any other reason, we will process a refund calculated
+                as total order amount minus the return shipping charges and 10% restocking fee.
+                <br>
+                Please follow these steps to make an approved return.
+                <br><br>
+                <b>Step 1: Call or email us to request a return</b>
+                <br>
+                Please be ready to provide the agent with your order number, the product(s) you wish to
+                return and a reason for which the item is being returned to us.
+                <br>
+                Email: info@fsastore.com<br>
+                Phone: 1-888-372-1450
+                <br><br>
+                <b>Step 2: A customer service representative will then send you an email with
+                    instructions for your return.</b>
+                <br><br>
+                Once your return has been approved, you will be provided with a pre-paid UPS
+                domestic or USPS domestic label to return the purchase to us. Once your return
+                is received and inspected (usually within 24 hours of receipt), your refund will be
+                processed and a credit will be applied to the original card used for this purchase. Please
+                note that the funds will take 2-3 days to transfer back to your account.
+
+
+            </div>
+
+            <li><a href="javascript:animatedcollapse.toggle('ans13')" class="faq">What is your shipping policy and what options do you offer?</a></li>
+            <div id="ans13" class="faqans">
+                <strong>Ans:</strong> All orders will be shipped out within 1-2 business days from the day the order was placed. Any orders placed after 5 p.m. Eastern will be processed the next business day.
+                We are currently shipping through UPS Ground Service only. Please refer to our Shipping and Returns page for more details.
+            </div>
+
+            <li id="ans14li"><a href="javascript:animatedcollapse.toggle('ans14')" class="faq">Will my order be subject to sales tax?</a></li>
+
+            <div id="ans14" class="faqans">
+                <strong>Ans:</strong><br><br>
+                <strong>Orders Subject to Sales Tax:</strong><br><br>
+                We are required by law to collect sales tax on orders shipping to addresses in these states: California, Connecticut, Delaware, Florida, Idaho, Illinois, Maryland, Massachusetts, Mississippi, New York, Pennsylvania, Tennessee. The tax applied to your order will be the combined state and local rate for the zip code where your order is shipped.
+                <br><br>
+                <strong>Self-Reporting State Sales &amp; Use Tax:</strong><br><br>
+                We do not collect sales tax on orders shipping outside of the above mentioned states.  However, just because we do not collect, and are not required to collect sales tax in other states,
+                does not necessarily exempt you from paying a sales or use tax in your state. A purchase is not exempt merely because it was made via the Internet or other remote methods.
+                In particular, the states of Colorado, South Dakota, Oklahoma, and Vermont require the reporting and payment of use tax for out of state untaxed purchases.
+                <br><br>
+                For more information on how to file use tax returns, please visit your state's tax website:<br>
+                Colorado: Colorado Department of Revenue at <a href="http://www.colorado.gov/revenue">http://www.colorado.gov/revenue</a><br>
+                Oklahoma: Oklahoma Tax Commission at <a href="http://www.tax.ok.gov/">www.tax.ok.gov</a><br>
+                South Dakota: South Dakota Department of Revenue at <a href="http://www.state.sd.us/drr2/">http://www.state.sd.us/drr2/</a><br>
+                Vermont: Vermont Department of Taxes' at <a href="http://www.state.vt.us/tax/index.shtml">http://www.state.vt.us/tax/index.shtml</a>
+            </div>
+        </ul>
+        <br><br>
+    </div>
+
+
+</div>
+
+        <div id="faq-holder-accordion" style="display: none;">
+            <div style="clear: left; float: left; margin-left: 15px; width: 90%;">
+                 <h1 class="pgtitle">Frequently Asked Questions</h1>
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="#">What is FSAStore.com ?</a>
+                        <div id="ans1"> <strong>Ans:</strong> FSAStore.com is the one stop source for all things FSA. For information about a flexible spending account <a href="/Services/Flexible-Spending-Learning-Center.aspx">click here</a>. We have the largest inventory of FSA eligible products and services on the web. In fact, we ONLY carry FSA eligible products! Our competitive pricing and quick turnaround coupled with a website you can trust makes us the source for Flexible Spending Account information and shopping. You can also use your FSA debit card to shop on our site. We accept almost every FSA debit card as well as all major credit cards. Please Note: Although we accept FSA Debit Cards, your FSA Administrator might require a receipt for your purchase to substantiate the claim. For more information on how to use FSAstore.com, please <a href="/Help/GettingStarted.aspx">click here</a>.</div>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">What does "FSA Eligible" mean?</a>
+                        <div id="ans2"> <strong>Ans:</strong> FSA Eligible means that in most every case this product or service will be covered by your Flexible Spending Account plan. FSAStore.com is a member of SIGIS and has implemented IIAS standards that supplies the list of every product that is FSA eligible. The debit card you use on our site will process your transaction and instantaneously approve your FSA purchases.</div>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Are all of your products FSA eligible?</a>
+                        <div id="ans3"> <strong>Ans:</strong> Yes. However, there are certain Flexible Spending Accounts that do not cover each and every item, this is sometimes set up by employers which limits some of the products you can buy. Most people will know whether their employer has limited the purchases that qualify but other than those rare FSA accounts, everything is eligible under the IIAS list that is the standard for FSA eligible products.</div>
+                    </li>
+                </ul>
+                <br>
+                <br>
+            </div>
+        </div>
+    <div class="innerPage"> <table width="980" align="center" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td><img src="https://44650c63147c830751ab-8034d273a7f007ec2f10d168dccbc3e6.ssl.cf2.rackcdn.com/about/One-Time-Loyalty/loyalty_r2_c1.jpg" width="26" height="83" border="0" style="display:block;"></td>
+			<td style="background-color:#C6E2F7; width:175px;">&nbsp;</td>
+			<td style="background-color:#C6E2F7;"><img src="https://44650c63147c830751ab-8034d273a7f007ec2f10d168dccbc3e6.ssl.cf2.rackcdn.com/about/One-Time-Loyalty/gold.jpg" width="81" height="83" style="display:block;"></td>
+			<td style="background-color:#C6E2F7; width:672px;"><span style="font-family:Helvetica; font-size:25px; color:#515c62; line-height:35px; ">Thank You for being a <span style="color:#da2200;"><strong>Loyal Customer!</strong></span></span></td>
+			<td><img src="https://44650c63147c830751ab-8034d273a7f007ec2f10d168dccbc3e6.ssl.cf2.rackcdn.com/about/One-Time-Loyalty/loyalty_r2_c3.jpg" width="26" height="83" border="0" style="display:block;"></td>
+		</tr>
+		<tr>
+			<td colspan="5"><img src="https://44650c63147c830751ab-8034d273a7f007ec2f10d168dccbc3e6.ssl.cf2.rackcdn.com/about/One-Time-Loyalty/loyalty_r3_c1_wide.jpg"></td>
+		</tr>
+		<tr>
+			<td colspan="5" align="center" style="height:40px;"><span style="font-family:Helvetica; font-size:30px; color:#da2200;"><a style="text-decoration:none; color:#da2200;" href="https://fsastore.com/FSA-Eligible-Items.aspx"><strong>Official FSA Saver Perks:</strong></a></span></td>
+		</tr>
+		<tr>
+			<td colspan="5" style="border-top: solid 1px #515c62;"></td>
+		</tr>
+		<tr>
+			<td colspan="5" width="100%"><table width="980px">
+					<tbody>
+						<tr>
+							<td><img src="https://44650c63147c830751ab-8034d273a7f007ec2f10d168dccbc3e6.ssl.cf2.rackcdn.com/about/One-Time-Loyalty/savings.jpg" width="100" height="100" alt="Save Extra"></td>
+							<td width="390px" style="padding: 0 30px 0 10px;"><span style="font-family:Helvetica;font-size:21px;color:#515c62;"><strong>Extra Savings<br>
+								</strong></span> <span style="font-family:Helvetica;font-size:15px;color:#515c62;">Shop Already-Discounted FSA products with your Saver Coupon!</span></td>
+							<td><img src="https://44650c63147c830751ab-8034d273a7f007ec2f10d168dccbc3e6.ssl.cf2.rackcdn.com/about/One-Time-Loyalty/truck.jpg" width="100" height="100" alt="Get Free Shipping"></td>
+							<td width="390px" style="padding: 0 30px 0 10px;"><span style="font-family:Helvetica;font-size:21px;color:#515c62;"><strong>Free Shipping</strong><br>
+								</span> <span style="font-family:Helvetica;font-size:15px;color:#515c62;">Orders over $50 always ship for free! </span></td>
+						</tr>
+						<tr>
+							<td><img src="https://44650c63147c830751ab-8034d273a7f007ec2f10d168dccbc3e6.ssl.cf2.rackcdn.com/about/One-Time-Loyalty/calendar.jpg" width="100" height="100" alt="Never Miss a Deadline"></td>
+							<td width="390px" style="padding: 0 30px 0 10px;"><span style="font-family:Helvetica;font-size:21px;color:#515c62;"><strong>Deadline Reminders</strong><br>
+								</span> <span style="font-family:Helvetica;font-size:15px;color:#515c62;"> Fill out our FSA Tracker and receive reminders when your deadline is approaching!</span></td>
+							<td><img src="https://44650c63147c830751ab-8034d273a7f007ec2f10d168dccbc3e6.ssl.cf2.rackcdn.com/about/One-Time-Loyalty/guarantee.jpg" width="100" height="100" alt="Enjoy Our FSA Eligible Guarantee"></td>
+							<td width="390px" style="padding: 0 30px 0 10px;"><span style="font-family:Helvetica;font-size:21px;color:#515c62;"><strong>Eligibility Guarantee</strong><br>
+								</span> <span style="font-family:Helvetica;font-size:15px;color:#515c62;">We guarantee everything on our website is eligible or your money back! </span></td>
+						</tr>
+				</tbody></table></td>
+		</tr>
+		<tr>
+			<td colspan="5" style="border-top: solid 1px #515c62;"></td>
+		</tr>
+		<tr>
+			<td colspan="5">&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="5" style="text-align:center;"><span style="font-family:Helvetica; font-size:16px; text-align:center;">As a loyal customer of FSAstore.com, you will also enjoy the following </span><span style="font-family:Helvetica; font-size:16px; text-align:center; color:#da2200;"> loyalty rewards:</span></td>
+		</tr>
+		<tr>
+			<td colspan="5" width="980px"><table width="980px" cellpadding="0" cellspacing="0" style="margin-top:10px;">
+					<tbody>
+                    <tr>
+    					<td bgcolor="#AB6963" align="center" style="padding:10px;height:40px; border-radius: 5px; -webkit-border-radius: 5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px;"><span style="font-family:Helvetica;font-size:14px;color:#424a4f;"><a style="text-decoration:none; color:#424a4f;" href="https://fsastore.com/FSA-Eligible-Items.aspx">
+                         <img src="https://cdn3.iconfinder.com/data/icons/fatcow/32/medal_bronze_1.png"/>
+                            Become a <strong>BRONZE SAVER</strong> after  your first purchase: <strong>SAVE 6%</strong></a></span></td>
+					</tr>
+					<tr>
+						<td bgcolor="#FFFFFF" align="center" style="height:5px;"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#acacac" align="center" style="padding:10px;height:40px; border-radius: 5px; -webkit-border-radius: 5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px;"><span style="font-family:Helvetica;font-size:16px;color:#424a4f;"><a style="text-decoration:none; color:#424a4f;" href="https://fsastore.com/FSA-Eligible-Items.aspx">
+                          <img src=" https://cdn3.iconfinder.com/data/icons/fatcow/32/medal_silver_3.png"/>
+                            Become a <strong>SILVER SAVER</strong> when you reach $50: <strong>SAVE 7%</strong></a></span>                   </td>
+                    </tr>
+					<tr>
+						<td bgcolor="#FFFFFF" align="center" style="height:5px;"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#d4bd7f" align="center" style="padding:10px;height:40px; border-radius: 5px; -webkit-border-radius: 5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px;"><span style="padding:10px;font-family:Helvetica;font-size:18px;color:#424a4f;"><a style="text-decoration:none; color:#424a4f;" href="https://fsastore.com/FSA-Eligible-Items.aspx">
+                            <img src="https://cdn3.iconfinder.com/data/icons/fatcow/32/medal_gold_1.png" />
+                            Become a <strong>GOLD SAVER</strong> when you reach $100: <strong>SAVE 8%</strong></a></span></td>
+					</tr>
+					<tr>
+						<td bgcolor="#FFFFFF" align="center" style="height:5px;"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#d7d7d7" align="center" style="height:40px; padding:10px; border-radius: 5px; -webkit-border-radius: 5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px;"><span style="font-family:Helvetica;font-size:20px;color:#424a4f;"><a style="text-decoration:none; color:#424a4f;" href="https://fsastore.com/FSA-Eligible-Items.aspx">
+                            <img src="https://cdn3.iconfinder.com/data/icons/fatcow/32/medal_gold_1.png" />
+                            Become a <strong>PLATINUM SAVER</strong> when you reach $200: <strong>SAVE 9%</strong></a></span></td>
+					</tr>
+					<tr>
+						<td bgcolor="#FFFFFF" align="center" style="height:5px;"></td>
+					</tr>
+					<tr>
+						<td bgcolor="#ebebeb" align="center" style="height:40px; padding:10px; border-radius: 5px; -webkit-border-radius: 5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px;"><span style="font-family:Helvetica;font-size:22px;color:#424a4f;"><a style="text-decoration:none; color:#424a4f;" href="https://fsastore.com/FSA-Eligible-Items.aspx">
+
+                             <img src="https://cdn4.iconfinder.com/data/icons/free-game-icons/64/Diamond.png" />
+                            Become a <strong>DIAMOND SAVER</strong> when you reach $400: <strong>SAVE 10%</strong></a></span></td>
+					</tr>
+				</tbody></table></td>
+		</tr>
+		<tr>
+			<td colspan="5" bgcolor="#FFFFFF" align="center" style="height:15px;"></td>
+		</tr>
+		<tr align="center">
+			<td bgcolor="#FFFFFF" colspan="5"><span style="font-family:Helvetica; font-size:16px; text-align:center;">Note: this is a One-Time promotion, and may not be repeated in the future. Max. discount value $50. Offer cannot be combined, promo codes are limited to 2 uses per customer, program conditions subject to change.</span></td>
+		</tr>
+	</tbody>
+</table></div>
+    <table>
+        <tr>
+<td width="50%" valign="top">244 5TH AVENUE Suite J-257 NEW YORK, NY 10001<br>
+<a href="tel:888-372-1450">(888) FSA-1450</a>
+<br>
+  <br>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755.7021247787474!2d-73.98690434036529!3d40.7442391480735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a615595747%3A0x821317eb5f231d72!2s244+5th+Ave+%23257%2C+New+York%2C+NY+10001!5e0!3m2!1sen!2sus!4v1414900787431" width="200" height="200" frameborder="0" style="border:0"></iframe>
+</td>
+        </tr>
+    </table>
+
+
+
+
+    </body>
+
+</html>
